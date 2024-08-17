@@ -1,0 +1,63 @@
+.editable {
+    width: 100%;
+    position: relative; 
+   /* Added to keep the elements aligned */
+}
+
+.editable_display,
+.editable_edit {
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0; /* Ensure margins are consistent */
+}
+
+.editable_display {
+    background-color: rgba(231, 231, 231, 0.726);
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(223, 219, 219, 0.425);
+    /* box-shadow: 0 3px 0 0 rgba(53, 95, 140, 0.15); */
+}
+
+.editable_display:hover {
+    background-color: #ccc;
+}
+
+.editable_edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding, border-radius, and box-shadow matched to editable_display */
+}
+
+.editable_edit input {
+    outline: none;
+    border: 1px solid rgb(19, 121, 236);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+   
+}
+
+.editable_edit_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0; /* Padding is zeroed here to avoid extra spacing */
+}
+
+.editable_edit_footer button {  
+    outline: none;
+    background-color: rgb(19, 121, 236);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgb(98, 98, 116);
+    cursor: pointer;
+    color: white;
+}
+
+.editable_edit_footer button:hover {
+    background-color: rgba(3, 88, 185, 0.847);
+}

@@ -1,0 +1,110 @@
+.cardInfo{
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 600px;
+
+}
+.cardInfo_box{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.cardInfo_box_title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    gap:10px;
+    display: flex;
+    align-items: center;
+}
+.cardInfo_box_body{
+    width: fit-content;
+}
+.cardInfo_box_body input{
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.cardInfo_box_colors{
+  display: flex;
+
+ gap:10px;
+  
+}
+.cardInfo_box_colors li{
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    list-style: none;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 100ms;
+}
+.cardInfo_box_colors .active{
+    border: 3px solid yellow;
+    scale: 1.4;
+}
+.cardInfo_box_progress_bar{
+    height:10px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.cardInfo_box_progress{
+    height:10px;
+   
+background-color: #1379ec;
+border-radius: 20px;
+
+}
+.cardInfo_box_progress-active{
+    background-color: limegreen;
+}
+.cardInfo_box_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardInfo_task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    gap: 10px;
+}
+
+.cardInfo_task_div {
+    display: flex;
+    align-items: center; /* Ensure items are centered vertically */
+    gap: 10px;
+}
+
+.cardInfo_task_div p {
+    flex: 1;
+    font-size: 1.3rem;
+    line-height: 20px;
+    margin: 0; /* Remove any default margin */
+    cursor: pointer;
+}
+
+.cardInfo_task_div input[type="checkbox"] {
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    cursor: pointer;
+    vertical-align: middle; /* Aligns checkbox with text */
+}
+
+.cardInfo_box_labels{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
